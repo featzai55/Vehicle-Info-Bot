@@ -20,7 +20,7 @@ app = Client(
 @app.on_message(filters.command(["start"]))
 def start(client, message):
     client.send_message(chat_id=message.chat.id,
-                        text=f"`Hi` **{message.from_user.first_name}**\n`Enter the vehicle number to search`",
+                        text=f"`Hi` **{message.from_user.first_name}**\n`Enter the vehicle number you want to search`",
                         reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Help", callback_data="help"),
                                                             InlineKeyboardButton("About", callback_data="about")]]))
 
@@ -36,9 +36,9 @@ def data(client, callback_query):
         callback_query.message.delete()
     elif txt == "about":
         callback_query.message.edit(
-            text=f"`Bot`            : [vehicleinfobot](t.me/vehicleinfobot)\n`Creator :` [agentnova](t.me/agentnova)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/),[Selenium](https://www.selenium.dev/) \n`Server  :` [Heroku](https://herokuapp.com/)",
+            text=f"`Bot`            : [vehicleinfobot](t.me/ftlzybot)\n`Hosted :` [featzai](t.me/featzai)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/),[Selenium](https://www.selenium.dev/) \n`Server  :` [Heroku](https://herokuapp.com/)",
             disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Give Feedback", url="t.me/agentnova")]]))
+            reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Report Bugs", url="t.me/ftfridaybot")]]))
 
 
 @app.on_message(filters.text)
