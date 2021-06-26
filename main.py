@@ -36,7 +36,7 @@ def data(client, callback_query):
         callback_query.message.delete()
     elif txt == "about":
         callback_query.message.edit(
-            text=f"`Bot`            : [vehicleinfobot](t.me/ftlzybot)\n`Hosted :` [featzai](t.me/featzai)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/),[Selenium](https://www.selenium.dev/) \n`Server  :` [Heroku](https://herokuapp.com/)",
+            text=f"`Bot`            : [vehicleinfobot](t.me/ftz4iinfobot)\n`Hosted :` [featzai](t.me/featzai)\n`Language:` [Python3](https://python.org)\n`Library :` [Pyrogram](https://docs.pyrogram.org/),[Selenium](https://www.selenium.dev/) \n`Server  :` [Heroku](https://herokuapp.com/)",
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton("Report Bugs", url="t.me/ftfridaybot")]]))
 
