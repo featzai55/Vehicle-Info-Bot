@@ -7,15 +7,15 @@
   "env": {
     "BOT_TOKEN": {
       "description": "Your bot token from @Botfather",
-      "value": ""
+      "value": "1853017560:AAH-X5jHV5yr4gfpgmqIlCEiTsiMbd_nko8"
     },
     "API_ID": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+      "value": "2995136"
     },
     "API_HASH": {
       "description": "Get this value from my.telegram.org! Please do not steal",
-      "value": ""
+      "value": "3c3766c8df153afb9e5ebfe7314af305"
     }
   },
   "buildpacks": [
